@@ -1,0 +1,11 @@
+<%= form_for @book, url: {action: "create"} do |f|%>
+    <%= f.label :titlee%>
+    <%= f.text_field :title%>
+    <br>
+    <%= f.label :image%>
+    <%= f.text_field :image%>
+    <br>
+    <%= f.label :author%>
+    <%= f.text_field :author%>
+    <%= f.submit "Save"%>
+<% end %>

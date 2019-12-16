@@ -1,0 +1,6 @@
+<img src=<%= @book.image%>>
+<h1><%= @book.title%></h1>
+<p><%= @book.author %></p>
+<h4><%= link_to 'delete', book_path(@book), method: :delete %>
+|| <%= link_to 'Update', edit_book_path(@book) %>
+</h4>
